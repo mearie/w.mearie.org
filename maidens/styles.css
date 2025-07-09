@@ -1,0 +1,246 @@
+:root {
+  /* 기본 스케일 값 */
+  --scale: 1;
+  word-break: keep-all;
+}
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  background-image: url(sakura.webp);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #fcfaf8; /* 백색에 가까운 따뜻한 배경색 */
+  color: #5c5c5c; /* 부드러운 회갈색 텍스트 */
+  line-height: 1.8; /* 줄 간격 조절 */
+  position: relative; /* 배경 이미지 배치를 위해 필요 */
+  padding: calc(1rem * var(--scale)); /* 기본 (모바일) 패딩 */
+}
+@media (min-width: 640px) { /* sm breakpoint */
+  body {
+    padding: calc(1.5rem * var(--scale));
+  }
+}
+@media (min-width: 768px) { /* md breakpoint */
+  body {
+    padding: calc(2rem * var(--scale));
+  }
+}
+/* New scaling for larger screens (>= 1024px) */
+@media (min-width: 1024px) { /* lg breakpoint */
+  :root {
+    --scale: 1.15; /* 1024px 이상에서 15% 스케일업 */
+  }
+}
+
+.container {
+  max-width: calc(700px * var(--scale)) !important; /* 컨텐츠 최대 너비 설정 (700px로 강제, !important 추가) */
+  background-color: rgba(255, 255, 255, 0.85); /* 컨테이너 배경을 반투명 흰색으로 (투명도 약간 더 강조) */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 그림자 유지 */
+  border-radius: 0.75rem;
+  /* 반응형 패딩 및 마진 조정 */
+  padding: calc(1rem * var(--scale)); /* 기본 (모바일) 패딩 */
+  margin-top: calc(1rem * var(--scale)); /* 기본 (모바일) 상단 마진 */
+  margin-bottom: calc(1rem * var(--scale)); /* 기본 (모바일) 하단 마진 */
+}
+@media (min-width: 640px) { /* sm breakpoint */
+  .container {
+    padding: calc(1.5rem * var(--scale));
+    margin-top: calc(1.5rem * var(--scale));
+    margin-bottom: calc(1.5rem * var(--scale));
+  }
+}
+@media (min-width: 768px) { /* md breakpoint */
+  .container {
+    padding: calc(2rem * var(--scale));
+    margin-top: calc(2.5rem * var(--scale));
+    margin-bottom: calc(2.5rem * var(--scale));
+  }
+}
+
+.main-title { /* 전체 페이지의 메인 제목 스타일 */
+  font-size: calc(2.5rem * var(--scale));
+  font-weight: 700;
+  color: #2f4f4f;
+  text-align: center;
+  margin-bottom: calc(1.5rem * var(--scale));
+}
+.section-title { /* 섹션 내부 제목 스타일 (사용된 프롬프트들) */
+  font-size: calc(2rem * var(--scale));
+  font-weight: 700;
+  color: #2f4f4f;
+  border-bottom: 2px solid #a0a0a0;
+  padding-bottom: calc(0.75rem * var(--scale));
+  margin-bottom: calc(2rem * var(--scale));
+  text-align: center;
+}
+section h2 {
+  font-size: calc(1.8rem * var(--scale)) !important; /* 챕터 부제목 크기 */
+  font-weight: 700;
+  color: #2f4f4f;
+  margin-top: calc(3rem * var(--scale)); /* 상단 여백 */
+  margin-bottom: calc(1.5rem * var(--scale));
+}
+/* General paragraph styles within the main content section */
+section p {
+  color: #5c5c5c;
+  line-height: 1.8;
+  margin-bottom: calc(1.5rem * var(--scale)); /* Default spacing between paragraphs */
+  font-size: calc(1.1rem * var(--scale)); /* 본문 글꼴 크기 10% 증가 (기존 1rem에서 1.1rem) */
+}
+/* Specific styles for the intro paragraph (already has Tailwind classes) */
+section p.text-gray-700 {
+  margin-bottom: calc(2rem * var(--scale)); /* Keep existing margin-bottom for intro */
+}
+.comment-paragraph {
+  font-size: calc(0.95rem * var(--scale)); /* 주석 글꼴 크기 조정 (기존 0.875rem에서 0.95rem) */
+  color: #707070; /* 주석 텍스트 색상 (본문보다 약간 진하게) */
+  font-weight: bold; /* 돋보이게 */
+  margin-top: calc(0.75rem * var(--scale)); /* 주석 상단 여백 */
+  margin-bottom: calc(2.5rem * var(--scale)); /* 다음 프롬프트와의 간격 */
+  padding-top: calc(0.5rem * var(--scale)); /* 주석과 프롬프트 텍스트 간 간격 */
+  border-top: 1px dashed #e9e9e9; /* 주석 위 점선 */
+}
+.comment-marker {
+  color: #a0a0a0; /* 주석 표식 색상 */
+  font-weight: bold;
+  font-style: normal;
+  vertical-align: super; /* 위첨자처럼 보이게 */
+  font-size: calc(0.7em * var(--scale)); /* 작게 */
+}
+.nav-button {
+  /* 텍스트 버튼 스타일로 변경 */
+  background-color: transparent; /* 배경색 제거 */
+  color: #66b2b2; /* 부드러운 청록색 텍스트 색상 */
+  padding: calc(0.6rem * var(--scale)) calc(1.2rem * var(--scale)); /* 클릭 영역 유지를 위한 패딩 */
+  border-radius: calc(0.5rem * var(--scale)); /* 모서리 둥글기 유지 (시각적으로는 보이지 않음) */
+  text-decoration: none; /* 밑줄 제거 */
+  transition: color 0.3s ease, transform 0.2s ease; /* 색상 및 변형 전환 효과 */
+  font-size: calc(0.95rem * var(--scale));
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: calc(0.4rem * var(--scale));
+}
+.nav-button:hover {
+  color: #4d9999; /* 호버 시 더 진한 청록색 */
+  background-color: rgba(102, 178, 178, 0.1); /* 은은한 호버 배경 효과 */
+  transform: translateY(-1px);
+}
+.pager-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: calc(2rem * var(--scale));
+  margin-bottom: calc(2rem * var(--scale));
+  padding-top: calc(1rem * var(--scale));
+  border-top: 1px solid #e0e0e0;
+}
+h1+.pager-nav {
+  padding-top: 0;
+  border-top: none;
+}
+hr { /* hr 태그에 직접 스타일 적용 */
+  border: none !important; /* Tailwind 오버라이드를 위해 !important 추가 */
+  border-top: 1px dashed #ccc !important; /* !important 추가 */
+  margin-top: calc(3rem * var(--scale)) !important; /* !important 추가 */
+  margin-bottom: calc(3rem * var(--scale)) !important; /* !important 추가 */
+  width: 50% !important; /* !important 추가 */
+  margin-left: auto !important; /* !important 추가 */
+  margin-right: auto !important; /* !important 추가 */
+  position: relative;
+}
+hr::before {
+  content: "· · ·"; /* The dots */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.85); /* 컨테이너 배경색과 일치 */
+  padding: 0 calc(1rem * var(--scale)); /* Padding around the dots */
+  color: #a0a0a0; /* Color of the dots */
+  font-size: calc(1.2rem * var(--scale));
+}
+
+.header-title {
+  font-size: calc(3rem * var(--scale)); /* 제목 크기 */
+  font-weight: 700; /* 굵게 */
+  color: #2f4f4f; /* 짙은 청록색 계열 */
+  margin-bottom: calc(0.5rem * var(--scale));
+}
+.subheader-text {
+  font-size: calc(1.1rem * var(--scale));
+  color: #707070; /* 부드러운 회색 */
+  margin-bottom: calc(0.25rem * var(--scale));
+}
+.section-title {
+  font-size: calc(2rem * var(--scale)); /* 섹션 제목 크기 */
+  font-weight: 700;
+  color: #2f4f4f; /* 짙은 청록색 계열 */
+  border-bottom: 2px solid #a0a0a0; /* 섹션 제목 아래 부드러운 회색 밑줄 */
+  padding-bottom: calc(0.75rem * var(--scale));
+  margin-bottom: calc(2rem * var(--scale));
+  text-align: center; /* 섹션 제목 중앙 정렬 */
+}
+.chapter-list {
+  list-style: none; /* 기본 리스트 스타일 제거 */
+  padding: 0;
+}
+.chapter-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: calc(0.75rem * var(--scale)) 0;
+  border-bottom: 1px dashed #e0e0e0; /* 챕터 항목 간 연한 회색 점선 */
+}
+.chapter-item:last-child {
+  border-bottom: none; /* 마지막 항목은 밑줄 없음 */
+}
+.chapter-title {
+  font-size: calc(1.25rem * var(--scale));
+  font-weight: 600;
+  color: #66b2b2; /* 부드러운 청록색 링크 색상 */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.chapter-title:hover {
+  color: #4d9999; /* 호버 시 더 진한 청록색 */
+}
+.chapter-page {
+  font-size: calc(1.1rem * var(--scale));
+  color: #707070; /* 부드러운 회색 */
+  font-weight: 500;
+}
+.download-button {
+  background-color: #77aaff; /* 부드러운 파란색 버튼 */
+  color: white;
+  padding: calc(1rem * var(--scale)) calc(2rem * var(--scale));
+  border-radius: calc(0.75rem * var(--scale)); /* 더 둥근 모서리 */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: calc(1.1rem * var(--scale));
+  font-weight: 600;
+  display: inline-flex; /* 아이콘과 텍스트 정렬 */
+  align-items: center;
+  gap: calc(0.5rem * var(--scale)); /* 아이콘과 텍스트 간격 */
+}
+.download-button:hover {
+  background-color: #5588cc; /* 호버 시 더 진한 파란색 */
+  transform: translateY(-2px); /* 살짝 위로 뜨는 효과 */
+}
+.footer {
+  border-top: 1px solid #e2e8f0;
+  padding-top: calc(2rem * var(--scale));
+  margin-top: calc(4rem * var(--scale));
+}
+.footer p {
+  color: #707070; /* 부드러운 회색 */
+  font-size: calc(0.95rem * var(--scale));
+}
+section.copyright-section p {
+  font-size: calc(0.95rem * var(--scale));
+  margin-bottom: calc(0.5rem * var(--scale)); /* 문단 간 간격 */
+}
+section.copyright-section p:last-of-type {
+  margin-bottom: 0;
+}
