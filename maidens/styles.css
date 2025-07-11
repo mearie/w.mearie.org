@@ -14,20 +14,24 @@ body {
   color: #5c5c5c; /* 부드러운 회갈색 텍스트 */
   line-height: 1.8; /* 줄 간격 조절 */
   position: relative; /* 배경 이미지 배치를 위해 필요 */
-  padding: calc(1rem * var(--scale)); /* 기본 (모바일) 패딩 */
+  --padding: 0.5rem;
+  padding: calc(var(--padding) * var(--scale)); /* 기본 (모바일) 패딩 */
 }
 @media (min-width: 640px) { /* sm breakpoint */
   body {
-    padding: calc(1.5rem * var(--scale));
+    --padding: 1rem;
   }
 }
 @media (min-width: 768px) { /* md breakpoint */
   body {
-    padding: calc(2rem * var(--scale));
+    --padding: 1.5rem;
   }
 }
 /* New scaling for larger screens (>= 1024px) */
 @media (min-width: 1024px) { /* lg breakpoint */
+  body {
+    --padding: 2rem;
+  }
   :root {
     --scale: 1.15; /* 1024px 이상에서 15% 스케일업 */
   }
@@ -39,23 +43,9 @@ body {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 그림자 유지 */
   border-radius: 0.75rem;
   /* 반응형 패딩 및 마진 조정 */
-  padding: calc(1rem * var(--scale)); /* 기본 (모바일) 패딩 */
-  margin-top: calc(1rem * var(--scale)); /* 기본 (모바일) 상단 마진 */
-  margin-bottom: calc(1rem * var(--scale)); /* 기본 (모바일) 하단 마진 */
-}
-@media (min-width: 640px) { /* sm breakpoint */
-  .container {
-    padding: calc(1.5rem * var(--scale));
-    margin-top: calc(1.5rem * var(--scale));
-    margin-bottom: calc(1.5rem * var(--scale));
-  }
-}
-@media (min-width: 768px) { /* md breakpoint */
-  .container {
-    padding: calc(2rem * var(--scale));
-    margin-top: calc(2.5rem * var(--scale));
-    margin-bottom: calc(2.5rem * var(--scale));
-  }
+  padding: calc(var(--padding) * var(--scale)); /* 기본 (모바일) 패딩 */
+  margin-top: calc(var(--padding) * var(--scale)); /* 기본 (모바일) 상단 마진 */
+  margin-bottom: calc(var(--padding) * var(--scale)); /* 기본 (모바일) 하단 마진 */
 }
 
 .main-title { /* 전체 페이지의 메인 제목 스타일 */
