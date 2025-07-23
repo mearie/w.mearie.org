@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Eternal Shrine Maidens - Used Prompts</title>
+  <script>(function() {
+    if (window.location.protocol === 'file:') return;
+    const preferred = sessionStorage.getItem('preferred-lang');
+    const langs = preferred ? [preferred] : navigator.languages || [navigator.language || navigator.userLanguage];
+    const koIndex = langs.findIndex(l => l.startsWith('ko'));
+    const enIndex = langs.findIndex(l => l.startsWith('en'));
+    if (koIndex !== -1 && (enIndex === -1 || koIndex < enIndex)) {
+      const path = window.location.pathname;
+      const filename = path.substring(path.lastIndexOf('/') + 1);
+      window.location.replace('../' + filename);
+    }
+  })()</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="container mx-auto shadow-xl rounded-xl">
+    <header class="p-6 sm:p-8 md:p-10 pb-4 border-b border-gray-200 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-800" style="color: #2f4f4f;">
+        Eternal Shrine Maidens
+      </h1>
+      <a href="index.html" class="nav-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back
+      </a>
+    </header>
+
+    <section class="p-6 sm:p-8 md:p-10 pt-6">
+<h1 class="section-title">Used Prompts</h1>
+<p class="text-gray-700 mb-8">
+This novel is almost entirely (&gt;95%) written using Gemini 2.5 Flash
+LLM (Large Language Model). As such, it was decided to disclose prompts
+used for the sake of transparency. Maybe some may consider these prompts
+as the true form of the novel. In any case, I hope these to be useful
+for those who want to see the writing process and inner thoughts during
+the writing. It should also be noted that these prompts were originally
+in Korean and translated into English, again with a tremendous help from
+Gemini.
+</p>
+
+      <nav class="pager-nav">
+        <a href="guide-letter.html" class="nav-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          Previous chapter
+        </a>
+        <a class="nav-button opacity-50 cursor-not-allowed">
+          Next chapter
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+
+<h2 id="1">I. Corporeal Maiden</h2>
+<p><span id="1:1">[1:1]</span> Write a story about a shrine. This shrine
+is located in the mountains, quite far from the city but not extremely
+remote. It has a boundary, and within this boundary, the shrine’s
+maidens can transform their bodies into any form, including inanimate
+objects. If they transform their bodies within the boundary in advance,
+that form is maintained even outside the boundary (but they cannot
+return to their original form, etc., before returning to the boundary).
+Because of this, once they become maidens, they no longer age or die,
+and various necessities for life sustenance become unnecessary. As you
+might notice, even the shrine buildings themselves are the body of a
+person who became a maiden a very long time ago, and that maiden (called
+the Great Maiden) creates a separate avatar within her own body to act
+as a proxy so that other maidens are not confused. Of course, if this
+fact were to become known outside the shrine, a big problem would arise,
+so only maidens are strictly allowed inside the shrine, and this fact is
+meticulously hidden. The plot of this story begins when the protagonist
+girl one day hears a clear voice in her head telling her to go to a
+certain shrine, and she formally enters as a maiden. Her paired fellow
+maiden is arranged to transform into each other’s clothes during outside
+activities so they are never separated from each other for a single
+moment. Describe the story up to this point in great detail.<span
+class="comment-marker">*</span></p>
+<p class="comment-paragraph">
+* I’m still not sure how the name <em>Lua</em> emerged. I kept this
+possibly awkward name largely as an inside joke for those who are aware
+that I had been heavily torn during the use of the Lua programming
+language.
+</p>
+<p><span id="1:2">[1:2]</span> Unlike the very solemn beginning, create
+a scenario where the maidens are surprisingly flexible in dealing with
+reality. For example, there’s a maiden among them who often transforms
+into a television. This maiden not only simply transforms into a
+television but also knows all the technical requirements for being a
+television, such as the details of vertical blanking or the ATSC
+protocol, and acts as a television (even without knowing these
+specifics, she can transform into a television, but only simpler
+functions<span class="comment-marker">*</span> would be possible. I’d
+prefer that these technical details are not revealed through
+dialogue—since only that maiden would know them). Describe up to the
+scene where Lua becomes interested that there are maidens who transform
+not just into clothes, but into items for convenient living.</p>
+<p class="comment-paragraph">
+* That sounds okayish, but I actually wanted it to be an analog
+television with only System M and NTSC support and thus utterly useless
+in the digital TV era. This small detail was later hugely bloated into a
+large worldbuilding as one can see from the <em>Maiden Life Guide</em>.
+</p>
+<p><span id="1:3">[1:3]</span> Describe a scene where Lua asks the Great
+Maiden why the Divine created such a unique boundary, and the Great
+Maiden answers. Do not add any commentary afterwards.<span
+class="comment-marker">*</span></p>
+<p class="comment-paragraph">
+* Gemini tended to append its own commentary so I had to keep it from
+doing so. You’ll see this kind of prompt over and over later.
+</p>
+<p><span id="1:4">[1:4]</span> Describe in great detail the process of
+Lua transforming into Shizuku’s clothes for Shizuku, who is briefly
+going out. The clothes Lua transforms into should be casual clothes, not
+the original maiden robes, and even afterwards, Lua should be able to
+maintain her five senses and communicate with Shizuku via telepathy. The
+setting is that maiden robes automatically exist as part of their bodies
+when maidens are within the boundary, but they become naked when they
+leave the boundary, so a maiden to become clothes in this way is
+needed.</p>
+<p><span id="1:5">[1:5]</span> Depict a scene where Lua, having gone
+outside the shrine as Shizuku’s clothes, is flustered as she experiences
+various hardships that clothes might endure.</p>
+<p><span id="1:6">[1:6]</span> On the way back, describe a scene where
+Lua, flustered, telepathically asks Shizuku if this is okay, and Shizuku
+explains her own experiences, specifically what accidents she endured
+after transforming into other objects (the most severe scene should be
+her breaking after transforming into a glass object), and despite that,
+she reassures Lua not to worry, saying that the problem was resolved by
+the Divine’s blessing. Indeed, Lua’s body returns to normal as soon as
+she enters the shrine. As a side note, for the incident where Shizuku
+broke as glass, the setting is that she was restored after the large
+glass fragments were brought into the shrine.</p>
+<h2 id="2">II. Automotive Maiden</h2>
+<p><span id="2:1">[2:1]</span> Describe Lua deciding to become an
+electric car to help other maidens move around, and reading car
+maintenance manuals to the point of memorizing the detailed structure of
+a car. Before Lua, maidens had to walk or use public transport, which
+was inconvenient when visiting other shrines or for various reasons.</p>
+<p><span id="2:2">[2:2]</span> Describe Lua’s debut as a car in a novel.
+Lua’s “fuel” is replaced by eating a lot of delicious food in advance,
+and Lua’s own avatar is in the driver’s seat to avoid problems if she
+gets caught by enforcement. Include a scene where Lua gets her driver’s
+license, and Shizuku transforms into Lua to drive Lua herself for car
+registration. A scene where delicious food is fed in real-time when fuel
+is low would also be good.</p>
+<p><span id="2:3">[2:3]</span> This time, describe Lua, wearing clothes
+transformed by Shizuku, going to briefly greet her parents after a year.
+Since she was a student and suddenly disappeared, her parents must be
+very worried. While struggling to explain what happened due to
+confidentiality, Shizuku realizes through her mother’s remark that Lua’s
+mother was a close friend she knew in her childhood, and successfully
+uses this to prove that the Divine’s power is not just mere words (since
+she cannot show transformation ability, it’s good to borrow Shizuku’s
+knowledge). It would also be good to include Shizuku’s reaction of
+wondering what to do when the mother asks her to say hello to Shizuku.
+Oh, and of course, the names ‘Lua’ and ‘Shizuku’ are maiden names, not
+their birth names, so their parents should not use ‘Lua’ or ‘Shizuku’.
+Do not include commentary at the very end.</p>
+<p><span id="2:4">[2:4]</span> Lua, walking back to the shrine, suddenly
+wonders why she can exist as a fully clothed avatar in the driver’s seat
+when she transforms into a car, but it’s impossible to choose clothing
+as part of her body in other cases. Shizuku also agrees, realizing it’s
+true and curious, then they ask the Great Maiden and hear an old story
+that explains the reason.</p>
+<p><span id="2:5">[2:5]</span> Describe Lua discovering the unexpected
+side of the Great Maiden, who likes shonen manga. The Great Maiden
+should be a little embarrassed about it but explain the reason calmly.
+Do not add commentary.</p>
+<p><span id="2:6">[2:6]</span> Describe Lua, wanting to revisit the
+piano she learned as a child, asking Aki to transform into a piano. Aki
+is knowledgeable about electronics and electricity but surprisingly not
+about this, so Lua teaches Aki about the structure of a piano. Aki’s
+usual demeanor should be well-described, and also depict several other
+maidens watching due to the unexpected sight of Lua teaching Aki. It
+should end with Aki transforming into a beautiful upright piano and Lua
+playing it.</p>
+<p><span id="2:7">[2:7]</span> Describe the shrine’s appearance during
+winter. The setting is that when in human form, maidens and their
+avatars also feel cold. (Since clothes, which are part of their bodies,
+do not change, something else would be needed.) There would be some
+maidens who transform into boilers or braziers, and it would be
+interesting to have a maiden who surprisingly transforms into an air
+fryer to roast winter food. Do not include commentary.</p>
+<p><span id="2:8">[2:8]</span> Describe a scene where they help with a
+village festival as one of the shrine’s external activities. Since they
+cannot enter the shrine grounds, the festival location is decided around
+the flat ground near the shrine entrance. Depict the maidens performing
+kagura as is customary for shrines, and also introduce the maidens
+playing the roles of costumes and bells who perform the kagura together
+(it would be good if one of the previously introduced maidens overlaps).
+Also describe what Lua does. Naturally, the shrine’s secret must not be
+leaked during this entire process. Please refrain from commentary.</p>
+<h2 id="3">III. New Maidenhood</h2>
+<p><span id="3:1">[3:1]</span> From Lua’s perspective (in the third
+person), depict the process of a new maiden receiving inspiration and
+coming to the shrine, just as Lua did. Describe how the maidens learn
+that a new maiden is coming and what preparations they make.</p>
+<p><span id="3:2">[3:2]</span> Describe what happens when the girl who
+will become the new maiden and her younger brother appear together at
+the shrine. Normally, the girl would come alone, but somehow, her
+brother followed her and even entered the shrine. Imagine what happens
+when an ordinary person comes to the shrine.</p>
+<p><span id="3:3">[3:3]</span> Describe the scene where the girl
+introduces herself and explains how her brother came along. She says
+that since she lost her parents and her brother is her only blood
+relative, if she were to disappear, her brother would not be able to
+live alone, so she brought him with her to the shrine. This puts the
+maidens, including the Great Maiden, in a difficult situation. They
+agonize over why the Divine would make a maiden out of a girl in such
+circumstances.</p>
+<p><span id="3:4">[3:4]</span> After long contemplation, the Great
+Maiden telepathically sends a message to Lua (currently: first-aid kit)
+and Shizuku (currently: protective barrier), who were waiting outside in
+transformed states, to ask her younger brother Ren if he is willing to
+become a maiden (because the Great Maiden cannot go outside. Decide on
+your own which of the two transforms into clothes and which remains a
+maiden). To the obvious question of whether a boy can become a maiden,
+they tell him that for a boy to become a maiden means to abandon his
+masculinity. The moment he answers that he would gladly do so if it
+meant being with his sister, a miracle occurs: Ren’s body changes into
+the distinct form of a girl, though still somewhat boyish, and he
+becomes able to enter and exit as a maiden. Along with the Great Maiden,
+who answers that she merely discerned the thoughts of the Divine when
+the two are amazed by her wisdom, describe the appearance of the (now)
+sister maidens who receive new names.</p>
+<p><span id="3:5">[3:5]</span> Describe the mischievous shrine life of
+Izumi, who was originally a boy. She shouldn’t cause anything too
+serious. And stop adding commentary at the very end.</p>
+<p><span id="3:6">[3:6]</span> Akari, while taking maiden lessons,
+realizes that if growth stops the moment one becomes a maiden, then
+Izumi will have to live forever in her child’s form. She asks the Great
+Maiden for confirmation, and while confirming it, the Great Maiden also
+adds that there might be objects that are easier to transform into
+precisely because they are small, and wonders if this might be the
+Divine’s true intention. Describe this scene.</p>
+<p><span id="3:7">[3:7]</span> Describe Izumi 10 years later. If she
+hadn’t become a maiden, she would be a young adult in her twenties, but
+she remains a little girl. Although her inner self has fully matured
+into a lady, she feels a slight lingering regret about her small
+child-like appearance, but finds greater joy in being able to live with
+her sister, now Akari, because of it. Lua asks Izumi, who is
+contemplating this, if she wants to go for a drive since Lua can
+transform into a car. Izumi agrees happily, but after a moment of
+thought, Lua realizes that she would need a child seat to have Izumi in
+the passenger seat, and the story ends with Lua being chided by Izumi,
+who has reached the same conclusion.<span
+class="comment-marker">*</span></p>
+<p class="comment-paragraph">
+* And that was the original end of the story as you can guess. But I
+still had so many things to tell so I kept writing, and oh dear, it
+ended up with more than three times the original text.
+</p>
+<h2 id="4">IV. Temporal Maiden</h2>
+<p><span id="4:1">[4:1]</span> Describe Lua going for a car inspection
+according to the law. Focus on how she feels about the process of her
+inner body being meticulously examined by others. The repair shop where
+the inspection takes place has no particular connection to the
+shrine.</p>
+<p><span id="4:2">[4:2]</span> Describe in a novel how Izumi transforms
+into a small object and helps the shrine.</p>
+<p><span id="4:3">[4:3]</span> Describe a scene where the Great Maiden
+tells the story of when she became a maiden. Since the Great Maiden is
+set to be the first maiden of the shrine, she must have lived for a very
+long time, making it likely a story from a mythical era.</p>
+<p><span id="4:4">[4:4]</span> If this shrine transcends the limits of
+matter, set another frequently visited shrine as one that transcends the
+limits of time (not simply that the maidens become immortal, but that
+they become beings who transcend time by simultaneously perceiving past
+and future). Describe what happens when Lua and others visit that shrine
+with a letter from the Great Maiden. Given that this shrine must also
+maintain strict secrecy, even to fellow maidens, they can only speak of
+the future in a limited way.</p>
+<p><span id="4:5">[4:5]</span> Tell some minor stories that happen at
+the Shrine of Time. In this description, mentions of the future are
+entirely possible (since this content is not revealed to the corporeal
+maidens).</p>
+<p><span id="4:6">[4:6]</span> Describe the maidens who have returned
+from meeting the temporal maidens meeting the Great Maiden and hearing
+about them.</p>
+<h2 id="5">V. Lovers’ Reunion</h2>
+<p><span id="5:1">[5:1]</span> Describe a scene where Lua’s old
+girlfriend<span class="comment-marker">*</span>, now an adult working as
+a reporter, is driving and spots Lua (specifically, the avatar inside
+the car Lua transformed into; remember that Lua’s real name is “Suzuki
+Yui” and she does not use the name “Lua”) who seems not to have aged at
+all, and thinks she’s seen a ghost.</p>
+<p class="comment-paragraph">
+* The Korean word for a girlfriend is virtually the same as the word for
+a friend who happens to be female. Gemini confused them and thus this
+work became a yuri fiction among others.
+</p>
+<p><span id="5:2">[5:2]</span> Sayuri, who memorized the car’s license
+plate, spots the car parked again and sees Yui (Lua) sitting idly
+inside. Sayuri doesn’t know this, but Yui was waiting for the maidens
+who went shopping and couldn’t stray far from her main body, the car, so
+she kept sitting there. Earlier, Yui herself had felt nostalgic seeing
+Sayuri and was a little nervous if Sayuri recognized her, but now, being
+in avatar form and unable to escape, she had no choice but to admit she
+was indeed Yui, leading to their reunion.</p>
+<p><span id="5:3">[5:3]</span> Yui (Lua) suggests Sayuri come inside the
+car for a moment because it’s hot. Yui explains, within the permissible
+scope, that she became a maiden and, though she doesn’t quite understand
+why, her growth stopped after becoming one. She also mentions she’s
+currently waiting for the other maidens who are shopping. Sayuri is
+somewhat relieved when Yui replies that she meets her parents every few
+years when asked if she’s seen them. Conversely, continue describing
+Sayuri’s reply that she’s working as a reporter, in response to Yui’s
+question about what she’s doing now.</p>
+<p><span id="5:4">[5:4]</span> Describe Sayuri wondering why a maiden
+would drive such a new model car, even though she thinks the car (into
+which Lua transformed) looks nice. Yui, pleased by the compliment to her
+car, talks about it (excluding the fact that she herself transformed to
+create it). Sayuri is slightly flustered but reassured that Yui, who was
+a chatterbox in her student days, fundamentally hasn’t changed.</p>
+<p><span id="5:5">[5:5]</span> After the other maidens return to the
+car, Sayuri briefly greets them and then leaves. Describe Sayuri’s
+growing curiosity about what kind of shrine it is, along with her relief
+that Yui seems to be doing well.</p>
+<p><span id="5:6">[5:6]</span> Describe the Great Maiden calling Lua
+after she returns from shopping, praising her for handling the situation
+wisely. Then, the Great Maiden encourages Lua to get along well with
+Sayuri, saying Sayuri will be helpful to the shrine even if not a
+maiden. When Lua asks if this information came from the Shrine of Time,
+the Great Maiden smiles without giving a direct answer, simply saying,
+“Perhaps.”</p>
+<p><span id="5:7">[5:7]</span> Describe Sayuri, using her authority as a
+reporter, starting an investigation based on the car’s license plate she
+remembered. She finds it odd that the car model she saw was released
+only three years ago, but the car was registered over a decade ago, with
+no other changes in between.<span class="comment-marker">*</span></p>
+<p class="comment-paragraph">
+* Because I’m pretty sure that Lua is unable to keep the model exactly
+the same over the course of 10+ years. It turned out to be a good idea.
+</p>
+<p><span id="5:8">[5:8]</span> With a headache, Sayuri goes for a drive
+by the riverside at night. During the drive, she realizes that “a new
+car is created whenever needed” would explain everything, and thus she
+uncovers one possibility regarding the shrine’s abilities. She does not
+know Yui’s maiden name (Lua) and has not yet imagined transformation
+(only guessing that they can simply ‘create’ things).</p>
+<p><span id="5:9">[5:9]</span> The Great Maiden tells Lua to go for a
+drive to clear her head, and sure enough, Lua is again spotted by
+Sayuri, who was lying in wait. When Lua waves her hand, saying she’s not
+some celebrity to be secretly followed, Sayuri suggests they drive
+together. During the drive, Sayuri, based on her discovery, directly
+asks if the shrine’s secret is the ability to create objects at will.
+Realizing she’s been transforming into too many new model cars and can
+no longer avoid it, Lua reveals the exact truth. Sayuri’s reaction is
+disbelief at the even more shocking truth that the car she is currently
+riding in is Lua herself. So, as the car battery runs low, Lua offers to
+show her directly. After ordering a hamburger at a drive-thru, Lua
+demonstrates the shrine’s secret by showing the car’s battery charging
+(without any separate connection) while Lua’s avatar enjoys eating the
+hamburger. Describe Sayuri’s thrill at a truth far beyond her
+imagination as a novel.</p>
+<p><span id="5:10">[5:10]</span> Describe Sayuri, despite being
+overwhelmed with emotion, intuitively understanding why this must remain
+a secret. She pledges to keep the secret. Yui (Lua) responds, scratching
+her head, saying she’ll be more careful when transforming herself.</p>
+<p><span id="5:11">[5:11]</span> At the same time, a maiden examining
+letters in the mailbox at the shrine’s boundary rushes to the Great
+Maiden with a surprised expression, holding a letter. Describe the Great
+Maiden, guessing its contents, inwardly thinking that Lua handled it
+well and there’s no need to worry, then receiving and beginning to read
+the letter. Do not mention the recipient of the letter, and set the
+sender as a construction company. <span
+class="comment-marker">*</span></p>
+<p class="comment-paragraph">
+* This was originally about to be the ‘period of great turmoil’ but the
+event was too tame for that. So this became a mere sign of that and the
+true turmoil was described in Chapter 9.
+</p>
+<h2 id="6">VI. Edge of Development</h2>
+<p><span id="6:1">[6:1]</span> Describe the Great Maiden explaining to
+Lua what is happening after she returns from her drive. A construction
+company plans to develop apartments on the mountain where the shrine is
+located, and since the shrine is prominently situated in the middle,
+they contacted them regarding land compensation. Lua is surprised that
+the shrine’s land was even registered. The Great Maiden explains that
+maidens who are wise enough but not overly old by worldly standards were
+legally registered as the land’s owners, and currently Izumi holds that
+role, but Lua is next in line. Lua immediately understands what she
+needs to do and begins looking for Sayuri’s contact information.</p>
+<p><span id="6:2">[6:2]</span> With the help of Aki, who transformed
+into a mobile phone, Lua calls Sayuri. Sayuri hears the situation and
+feels a sense of wonder, realizing this is why she was made to meet Yui,
+and promises to help diligently. Since simply refusing land compensation
+will likely not be enough to resist, describe various maidens beginning
+to investigate the company’s financial situation and illegal activities
+to find its Achilles’ heel.</p>
+<p><span id="6:3">[6:3]</span> Imagine and describe the internal state
+of the company as discovered by the maidens. First, it needs to be
+stated that they were suffering significant financial deterioration due
+to reckless project acquisitions and debt-financed operations, and were
+therefore pursuing the apartment development project as a big gamble.
+Describe the illegal activities as you see fit.</p>
+<p><span id="6:4">[6:4]</span> Sayuri, having received all this
+information, breaks an exclusive story. The apartment development
+project is halted as it’s exposed that it’s not merely a matter of a
+small shrine plot but involves various intertwined issues. Soon after,
+the company goes bankrupt, and Lua acquires the forest surrounding the
+shrine at a bargain price when it goes up for auction, bringing the
+incident to a close. Write a detailed novel up to this point.</p>
+<p><span id="6:5">[6:5]</span> Describe the aftermath. Include the scene
+of Lua formally receiving the land transfer from Shizuku, and Sayuri,
+grateful for the exclusive information, coming right up to the shrine
+boundary to meet the Great Maiden and Lua. Specifically, Sayuri asks the
+Great Maiden to take good care of Yui, who, unlike herself, will live an
+eternal life. The Great Maiden responds that they owe Sayuri a great
+debt this time and looks forward to her continued help.</p>
+<p><span id="6:6">[6:6]</span> It’s peculiar that Sayuri and Yui were in
+a relationship in the past. Describe this in detail, imagining it. Their
+last meeting before Yui became a maiden was around their first year of
+high school.</p>
+<p><span id="6:7">[6:7]</span> Describe Yui and Sayuri going for another
+drive to celebrate the resolution of the incident, while chatting about
+their past relationship. Also, describe how Yui (Lua) feels about Sayuri
+being inside her body (the car), explained through Yui’s own words.</p>
+<h2 id="7">VII. Luminous Maiden</h2>
+<p><span id="7:1">[7:1]</span> Describe the maidens enduring the
+unusually hotter-than-usual summer weather due to abnormal climate<span
+class="comment-marker">*</span>, using various methods. It would be good
+if there’s also a scene where they ask the Great Maiden if it was this
+hot in the past (the model answer is that days this hot occurred often,
+but continuous days of such heat are new in recent years).</p>
+<p class="comment-paragraph">
+* This too alludes to the ‘period of great turmoil’.
+</p>
+<p><span id="7:2">[7:2]</span> Show a senior maiden who became a maiden
+at a young age, besides Izumi, and describe her setting through Izumi’s
+conversation with that maiden.</p>
+<p><span id="7:3">[7:3]</span> Describe Mai’s daily life.</p>
+<p><span id="7:4">[7:4]</span> Describe Lua’s curiosity about whether
+the temporal maidens are also called to become maidens at some point
+like the corporeal maidens, or by other means, and the Great Maiden’s
+response to her.</p>
+<p><span id="7:5">[7:5]</span> If so-called corporeal maidens and
+temporal maidens exist, do other maidens also exist? Describe the
+content up to the point where the Great Maiden expresses interest when
+Lua unintentionally asks if “maidens of light” also exist, asks her back
+why she thought that, and later reveals that the luminous maiden does
+exist and is none other than the entity mediating telepathy. For
+reference, these maidens correspond to physics’ spacelike (matter),
+timelike (time), and lightlike (light), but the Great Maiden’s decision
+to use this explanation or not is at your discretion.</p>
+<p><span id="7:6">[7:6]</span> Describe the scene where Aki talks about
+the luminous maiden. Aki, having basic knowledge of this type of physics
+(because she has to deal with satellite signals), makes the (correct)
+conjecture that corporeal maidens correspond to spacelike, dealing with
+things slower than light; temporal maidens correspond to timelike,
+dealing with things faster than light; and Maidens of Light correspond
+to lightlike, dealing with things at the speed of light. In Aki’s actual
+dialogue, summarize the content so that it can be understood even
+without physics knowledge.</p>
+<p><span id="7:7">[7:7]</span> I want to describe more interaction with
+the luminous maiden. In the last part, there’s a scene where they pray
+to the luminous maiden to exert additional powers, and this needs to be
+justified. So, there must be an experience where something difficult
+happened. They first learned that they could pray to the luminous maiden
+(not from the Great Maiden, but from another maiden), and it worked when
+they tried praying. The person who tries this doesn’t necessarily have
+to be Aki, but it must be one of the corporeal maidens.</p>
+<p>And I want to show more explicitly that it’s not “Maidens of Light”
+(plural); unlike the corporeal and temporal maidens, which are plural, I
+think the luminous maiden should be a much more unified being (just as
+all objects moving at the speed of light in reality have zero mass)<span
+class="comment-marker">*</span>. This should not come out as an
+explanatory statement, but rather be realized naturally during the
+process of communion with the luminous maiden.</p>
+<p class="comment-paragraph">
+* It is actually possible to make this plural if we strictly adhere to
+physics, but the title explicitly says luminous, i.e. photon, so it
+seemed better to make it a unified entity that is indistinguishable from
+others.
+</p>
+<p>What kind of episode would be good to achieve both of these goals
+simultaneously? This episode should come after Lua and Aki discuss the
+three types of maidens, but before ‘the period of great confusion’ (and
+there should be no mention of the period of great confusion)<span
+class="comment-marker">*</span>.</p>
+<p class="comment-paragraph">
+* [7:7] was written to support [9:6] and thus written much later than
+the entirety of [9:*]. Gemini revealed the future story too much that I
+had to explicitly suppress that.
+</p>
+<h2 id="8">VIII. Eternal Poison<span
+class="comment-marker">*</span></h2>
+<p class="comment-paragraph">
+* This chapter was written after Chapter 9 in order to account for the
+Gemini’s criticism that the plot is too bland.
+</p>
+<p><span id="8:1">[8:1]</span> One day, Lua and Shizuku go shopping.
+Although it’s typical for an even number of people to go shopping (one
+transforms into clothes and one wears them), Akane expresses a desire to
+go along and transforms into a wallet. Usually, they carry money in
+pockets, and shopping bags from stores are sufficient, so an extra
+person isn’t needed, but the maidens who were originally going decide to
+agree, thinking a wallet would be convenient. For a while, there are no
+problems, but suddenly Akane telepathically says that she’s moving away
+from the maidens, and it’s revealed that the wallet has been stolen. The
+person they almost bumped into earlier was a pickpocket. The remaining
+maidens are startled and go to the police station to report it. They
+telepathically contact Aki at the shrine, asking her to transform into a
+cell phone to receive calls at any time. Several hours later, Aki
+telepathically informs them that the pickpocket was caught, but the
+wallet was not found, leaving the maidens bewildered. This happened even
+though Akane’s telepathy allowed them to estimate her location to some
+extent. Akane despairs, asking if she’ll have to live eternity as a
+wallet if she can’t return within the boundary, and the maidens, unable
+to say anything, silently think, “Is that so…?” Describe the entire
+content with sufficient detail. Shiori, being not a corporeal maiden,
+should not appear anywhere.</p>
+<p><span id="8:2">[8:2]</span> When Lua and Shizuku return to the shrine
+in a somber state, the Great Maiden asks if they are okay. The maidens
+briefly explain the situation and express concern for Akane. The Great
+Maiden then asks if they remember her mentioning past maidens who
+misused their powers, and they confirm. “Then what happened to those
+maidens?” the Great Maiden asks, and the two maidens recall Akane’s
+situation and gain understanding. However, the Great Maiden reassures
+them that such despair is reserved for those who maliciously abuse their
+powers, and since they are good and fulfilling their maiden duties well,
+they need not worry. She adds that although such incidents may
+occasionally occur, the Divine will not abandon them. Describe in detail
+the two maidens, still a little anxious but having witnessed divine
+blessings so far, tightly clasping hands and vowing to somehow overcome
+the situation.</p>
+<p><span id="8:3">[8:3]</span> Late at night, after transmitting the
+Great Maiden’s words to Akane telepathically, Akane stabilizes somewhat
+and mentions she feels like she’s inside a trash can or something
+similar. The next day, at dawn, the two, accompanied by a few more
+corporeal maidens, descend to the village and meticulously search
+through trash cans. Trash collection day was the next day, so there was
+a risk of her being carried even farther away if not found that day.
+They were so desperate that even a cat’s paw would have helped, so they
+contacted Sayuri, who arrived late and also assisted. Soon, Akane says
+she hears the maidens’ voices nearby, narrowing down the location.
+Eventually, they discover the wallet Akane had transformed into;
+although quite dirty, it was unmistakably Akane. To take it back, they
+clean it thoroughly, and Akane, perhaps relieved, comments that it felt
+better than any bath she’d ever had. Upon entering the boundary, Akane
+returns to her original form and expresses gratitude to the Great
+Maiden, saying she was afraid but gained great enlightenment. Write this
+chapter in Korean.</p>
+<h2 id="9">IX. World in Crisis</h2>
+<p><span id="9:1">[9:1]</span> Describe the scene where information from
+the temporal maidens arrives at the shrine, indicating that something
+major will happen in early 2038. This point in time is about 4 and a
+half years after the current time in the story. This time, since it’s a
+major event, the temporal maidens visit the shrine in person, and the
+Great Maiden listens intently, her usual smile completely gone.</p>
+<p><span id="9:2">[9:2]</span> Describe the maidens discussing what
+exactly the great confusion refers to within the uneasy shrine. The main
+opinions of the maidens were split into two: one possibility was that
+the widely used time system in computers, known as Unix time, would
+experience a range issue similar to Y2K<span
+class="comment-marker">*</span>, and the other was the possibility of
+widespread power and mechanical failures in large areas due to a coronal
+mass ejection (CME) occurring at the peak of solar activity. Have a
+maiden representative for each opinion explain their respective
+scenarios, and if there are minority opinions, think of and add
+them.</p>
+<p class="comment-paragraph">
+* My previous work, <em>Synchronicity</em>, also happens to make use of
+2036 NTP timestamp overflow as its core plot device. Hopefully this
+trope won’t last in my next work.
+</p>
+<p><span id="9:3">[9:3]</span> The Great Maiden’s conclusion was that if
+the laws of the world were indeed distorting as Mai suggested, there
+would be no way to prepare beforehand, so no special preparation was
+needed. However, both leading scenarios could theoretically be prepared
+for by humanity, and fortunately, there was still time. Therefore, they
+should move towards accelerating existing solutions secretly from
+people. For example, if a solution existed but would only be finalized
+in 2040, problems would arise, so they needed to discreetly adjust
+things behind the scenes using various methods to ensure completion
+before 2038. Describe her persuasively explaining this to the
+maidens.</p>
+<p><span id="9:4">[9:4]</span> For the first six months, no actual
+actions were taken. Instead, they spent time investigating which people
+needed to be inspired or influenced, and how resources should be
+allocated to efficiently accelerate the solutions. Since the number of
+maidens is limited, they cannot influence many people at once. For the
+Y2K38 problem, old embedded devices were identified as the biggest
+issue, so the strategy was to intentionally induce situations where old
+devices had to be replaced. For CME, despite being unrelated to actual
+scientific observations, a “mistake” was introduced to induce multiple
+research teams to simultaneously predict the CME, thereby forcing rapid
+change. Borrowing Mai’s expression, who, despite appearing as a young
+child, has lived for hundreds of years, she stated that never in her
+time at the shrine had the entire shrine been so academic, indicating
+the extensive review the maidens undertook. Describe the above content
+in great detail as a novel.</p>
+<p><span id="9:5">[9:5]</span> In this plan, virtually most operations
+take place overseas, so it’s crucial to quietly enter foreign countries,
+perform operations at precise locations, and return safely. Therefore,
+in addition to Lua, who was originally active as a car, the very small
+senior maiden Mai is assigned, and the two practice transforming into
+energy-efficient small drones. Instead of directly crossing the Pacific,
+they travel by visiting inhabited areas where they can find good food,
+like migratory birds do, allowing them to resupply energy on time. This
+way, they can secretly travel across the globe, even if it takes a
+little longer. At the current technological level, the one-way travel
+time was judged to be just under a week, which was deemed sufficient.
+Describe Lua reviewing the structure of small batteries used in drones
+and giving Mai, who had never transformed into a mode of transportation
+before, crash course on necessary details.</p>
+<p><span id="9:6">[9:6]</span> Describe Lua embarking on her first drone
+mission. Lua’s objective is to deliver Izumi, who has transformed into a
+tiny toy with a USB, to a research lab in the US. Izumi’s role is to
+plug the USB into the necessary computer and manipulate data according
+to Aki’s telepathic instructions. Lua and Izumi also know a certain
+amount from Aki’s teachings, but Aki knows best exactly how to fix the
+data, so they follow her instructions. This first drone mission also has
+a pilot nature. Lua successfully delivers Izumi near a computer in
+Denver, Colorado, USA, after a nearly week-long long-distance flight
+around the Pacific. While Lua hides and waits outside, Izumi moves on
+her own to plug in the USB, and lo and behold, it’s an Excel file
+format. Aki thinks that this won’t be simple to modify, so she prays to
+the luminous maiden, asking for temporary help to manipulate the file on
+Izumi’s behalf, and it happens as requested. Describe the successful
+manipulation of data without being detected and within the time limit,
+in about 20 paragraphs.</p>
+<p><span id="9:7">[9:7]</span> After several successful operations, and
+with Mai also successfully completing her maiden flight, the plan was
+gaining momentum. One day, Mai was carrying Izumi and Akari to Sydney,
+Australia. Coincidentally, it was precisely the migratory bird season,
+and the drone collided with birds, resulting in an accident where Akari
+fell in Australia’s Northern Territory at night local time. They tried
+to find her immediately, but she had transformed so small and fallen
+from a considerable height, making it a search in an area spanning tens
+of square kilometers. Fortunately, telepathy was usable, so Mai began
+moving using a search method similar to maritime search, trying to get
+into Akari’s line of sight. Akari, unable to see Mai and with no
+distinctive terrain around, worried, but successfully calculated her
+approximate latitude by observing the constellations. Based on this, Mai
+significantly narrowed the search area and finally found Akari. Seeing
+Akari clinging tightly to Mai’s drone body, vowing not to fall again,
+Mai thinks, “So this also happens to me” (since Mai usually looks like
+the youngest maiden). Describe this in detail as a novel.</p>
+<p><span id="9:8">[9:8]</span> While manipulating research results,
+other maidens decided to undertake an operation to gradually damage old
+embedded devices, prioritizing those that would cause serious problems
+if not upgraded. They wouldn’t break the devices’ functionality but
+would make the display act strangely or in other ways force people to
+replace them voluntarily. Various methods were employed: some maidens
+approached devices directly if they were relatively close, others
+received help from Lua and Mai, some manipulated documents to accelerate
+replacement times, and some even transformed anew and scattered
+excrement on exposed devices to cause them to malfunction. Describe the
+above content in detail as a novel.</p>
+<p><span id="9:9">[9:9]</span> Sayuri, who knew Lua’s secret, wasn’t
+just observing. The fact that multinational research teams’ observations
+converged on a CME being expected around 2037-38, and the resolution to
+prepare swiftly being widely publicized, was largely due to Sayuri
+meeting various journalists and processing and disseminating the
+information in an easy-to-understand manner. The concentrated coverage
+of the Y2K38 problem was also the fruit of the investigative reporting
+team, including Sayuri. Although Sayuri didn’t know everything happening
+at the shrine, she knew Lua transformed into a drone and traveled around
+the world. As a bonus, she was dumbfounded when a small drone, having
+completed its mission, appeared before her during an overseas business
+trip to South America and wrote on the ground. Describe the above
+content in detail as a novel.</p>
+<p><span id="9:10">[9:10]</span> On the night of January 19, 2038, four
+years later, as if to confirm their efforts, all the maidens sat in
+front of the television, which Aki had transformed into, watching a
+special broadcast. With not only the corporeal maidens but also the
+temporal maidens watching with bated breath, everyone breathed a sigh of
+relief as minor issues appeared after Unix time exceeded its range, but
+no fatal problems occurred, and they congratulated each other on their
+hard work. Meanwhile, the thought might arise, “Did the CME not occur?”
+Later, Aki confirms that a CME did occur on the same day but narrowly
+missed Earth, causing no damage. Describe the maidens and the Great
+Maiden feeling a sense of accomplishment for having contributed even a
+little to all these events.</p>
+<p><span id="9:11">[9:11]</span> To thank the hardworking maidens, Kana
+announces she has dug an open-air bath and invites them. Kana had also
+worked hard for four years, but unlike the maidens who were on the front
+lines, most of her work was support, and she felt sorry for not being
+able to help with the difficult tasks directly. So, on this occasion,
+she used her usual boiler form to heat the stream water, creating a warm
+bath. Describe the maidens concluding their four-and-a-half-year journey
+with warm hot springs, accompanied by words of gratitude.</p>
+<p><span id="9:12">[9:12]</span> Describe the shrine returning to its
+mundane daily life as a novel. The temporal maidens have now returned to
+their original shrine.</p>
+<p><span id="9:13">[9:13]</span> Summarize the past four years from the
+perspective of the temporal maidens. Since their physical movement was
+relatively limited, all they could do was inform the corporeal maidens
+how much a specific choice could probabilistically change outcomes. (The
+temporal maidens can see “all” possible futures from the present,
+allowing them to calculate probabilities.<span
+class="comment-marker">*</span>) Even until the very last moment, they
+were tense, unable to guarantee that the threat had 100% disappeared,
+and now, finally, they are relieved that all such possibilities have
+been excluded and have returned to their daily lives. Describe this up
+to that point.</p>
+<p class="comment-paragraph">
+* It may be an allusion to the interpretations of quantum physics, but
+the actual intent was much more about the modal logic. Yes, I learned
+that in my Master’s curriculum!
+</p>
+<p><span id="9:14">[9:14]</span> Describe the scene where Lua realizes
+that the shonen manga (<em>Flame Swordsman Kaen</em>) the Great Maiden
+had been reading for a while had concluded some time ago, but she hadn’t
+had time to read it due to being busy, and has finally finished it, and
+Lua recommends a new series.</p>
+<h2 id="guide">Maiden Life Guide<span
+class="comment-marker">*</span></h2>
+<p class="comment-paragraph">
+* This and all subsequent chapters were written because I let Gemini
+look for as many plot errors as possible and I successfully defended
+almost all questions; at this point it seemed like a waste not to make
+use of the resulting conversations. That’s also why prompts are
+comparatively long and so specific that some prompts literally made into
+the novel itself. Ironically enough, this chapter was much more favored
+than other chapters when Gemini and other LLMs were asked to review
+them….
+</p>
+<p><span id="A:1">[A:1]</span> From Aki’s perspective, imagine creating
+a small booklet titled “Maiden Life Guide” and write its preface. It
+should feel like speaking informally to a junior maiden (it can start
+with “Hello! I’m Aki. I’m a corporeal maiden who…”). In the preface, Aki
+reveals the reason for writing this book: to explicitly put down what
+she has learned to expand her comprehension, and also for the purpose of
+experimenting with rapidly changing publishing media (e.g., e-books at
+the current time). It would be good if, during her self-introduction,
+Aki tries to mention her age (251 years old as of 2038, meaning born in
+1787; in the actual text, only mention the age), then gasps, “Oh, this
+is a secret,” and slightly regrets it, but then reassures(?) the reader
+that if you live long enough, age is just a number. Then, the preface
+should conclude with a brief overview of the booklet’s contents.</p>
+<p><span id="A:2">[A:2]</span> The following content begins with the
+subtitle “First Steps.” It needs to cover the following:<br />
+- Confirm that if there’s nothing else happening, the maiden reading
+this book has likely been called by the Divine.<br />
+- State that the maidens of this shrine are formally called “the
+corporeal maidens,” that “the temporal maidens” exist in a separate
+shrine, and that “the luminous maiden” exists, enabling telepathy and
+such. Reveal that the fact of the luminous maiden being a single unified
+entity was learned from Mai’s experience.<br />
+- Explain why they are called the corporeal maidens: because they can
+manipulate matter in ways unimaginable to ordinary people and use it as
+their own body.<br />
+- Thanks to this, they are immortal and can survive perfectly well
+without eating or sleeping. Of course, despite this, since they are
+fundamentally human, they still eat and sleep normally if they
+wish.<br />
+- However, don’t forget that these abilities were bestowed by the Divine
+to balance this world.</p>
+<p><span id="A:3">[A:3]</span> The following content begins with the
+subtitle “Transformation Ability.” It needs to cover the
+following:<br />
+- Transformation is our most important ability, so it’s good to
+understand it precisely.<br />
+- Within the shrine’s boundary, you can transform into either living
+creatures or inanimate objects, and return to your original form at
+will.<br />
+- Outside the shrine’s boundary, both are impossible, but if you’ve
+already transformed and gone outside, that state is maintained. If you
+need to be active in a transformed state, assume this is usually the
+case.<br />
+- Since we become naked outside the shrine’s boundary (to be explained
+later), when one maiden goes out as a pair with another, the other
+typically transforms into that person’s clothes to cover them. This will
+probably be the first thing you practice when you first transform.<br />
+- After transformation, our five senses remain the same. In particular,
+senses like sight and hearing are reproduced in a way that the person
+wearing the transformed clothes would have experienced if you
+transformed into clothes. Otherwise, you’ll feel as if your entire body
+is experiencing the outside scenery. It might feel a bit awkward, but
+you’ll quickly get used to it. If you’ve played popular first-person
+action games recently<span class="comment-marker">*</span>, you might
+adapt easily?<br />
+- The most important aspect of transformation is fidelity. Fidelity
+refers to the degree to which the transformed object faithfully reflects
+reality. Major factors include the size difference from your original
+body, your comprehension of the object, and your physical condition. If
+you’re tall but try to transform into a small object, your fidelity will
+decrease. If you try to transform into an object you don’t know well or
+if your body feels stiff, your fidelity will also drop
+significantly.<br />
+- Among these, comprehension is by far the most important. If it’s
+simply a static object, remembering how it looks is mostly enough to
+perfectly mimic it. However, for example, if you try to mimic a car, you
+need to understand the principles of the car in detail and perceive its
+parts as if they were your own body to function as a proper car outside
+without being detected (if you want to know more, go find Lua). If you
+transform into a car with low comprehension, it will move, but its
+wheels might be fixed and drag, making it look strange to anyone.<span
+class="comment-marker">⁑</span><br />
+- The more you know about the subject, the more faithful your
+transformation can be, so let’s study hard!</p>
+<p class="comment-paragraph">
+* Refers to a classical first-person shooter (FPS) like <em>Counter
+Strike</em> (2000). Aki isn’t that much into PC gaming so the error of
+about 30 years should be expected.<br> ⁑ But this kind of incomplete
+transformation poses no threat if it is fine to publicly show that,
+making the maiden’s ability extremely powerful and very dangerous to
+abuse. The <em>Guide</em> doesn’t explicitly mention this mainly because
+Aki is not necessarily aware of this fact and also it is so scary to
+think about, but it’s enough of the reason why the Divine’s judgement
+turns maidens to inanimate objects for eternity.
+</p>
+<p><span id="A:4">[A:4]</span> I want to continue the content related to
+the “Transformation Ability” subtitle. The following is the subsequent
+content:</p>
+<p>- If you transform into a sufficiently large object, you can create
+an avatar that can exist near that object. (The avatar cannot be larger
+than the object you transformed into.<span
+class="comment-marker">*</span>) When you create an avatar, you
+primarily perceive the sensations it experiences, but the sensations
+from the original object don’t disappear, so it can be used for various
+purposes.<br />
+- You might be scared of what happens if you get hurt while transformed.
+Of course, if you transform into a glass marble and it breaks, it will
+really hurt. However, if you bring most of the broken pieces back into
+the boundary, you can return to human form, and no trace or wound will
+remain. If such a situation occurs, don’t panic and keep reminding
+yourself what the pieces look like and that those pieces are now your
+body.<span class="comment-marker">⁑</span> High comprehension applying
+to this situation as well, allowing for excellent transformation.<br />
+- We can only transform into objects that can physically exist. For
+example, a car that rolls without any energy cannot exist, so we cannot
+transform into one. In other words, if you transform into a car, it will
+continuously need fuel, which you can usually substitute by eating. If
+the fuel runs out, you’ll probably be forced back into human form, which
+would be very troublesome, so you should eat regularly, right? Actually,
+there aren’t many cases of transformation like this yet, so more
+experimentation is needed in the future.<span
+class="comment-marker">⁂</span> If you find anything interesting, let me
+know!<br />
+- Finally, what I want to tell you is that it’s good to have a way to
+move, even if it’s an inanimate object, to prepare for unexpected
+situations. For example, if you transform into a ball, it would be good
+to have a movable weight inside to adjust the direction the ball
+bounces. Otherwise, you’d have to hope that other maidens find you, and
+isn’t that a scary thought? There’s no harm in preparing beforehand.</p>
+<p class="comment-paragraph">
+* If this were allowed, it is possible that a pair of maidens can
+transform into each other’s clothes and give them to their own avatars.
+This would dilute the original narrative intent.<br> ⁑ While this
+explanation is ordered in this way for convenience, it is actually the
+opposite; the very act of “collecting most fragments” <em>is</em> an
+extremely efficient method to convince oneself that those fragments are
+indeed one’s own body.<br> ⁂ This ought to be the beginning of
+maidenology.
+</p>
+<p><span id="A:5">[A:5]</span> The following content is under the
+subtitle “Life at the Shrine.” It needs to cover the following:<br />
+- At the shrine, you’ll see a truly beautiful<span
+class="comment-marker">*</span> maiden whose words and actions show deep
+experience; that’s the Great Maiden. More precisely, the Great Maiden is
+the shrine building itself (what we see as the Great Maiden is her
+avatar). The Great Maiden is the first maiden of this shrine and the one
+who has lived the longest, so if you have questions and other maidens
+don’t know, you can ask her, and you’ll find an answer.<br />
+- To talk a little more about the maiden attire you’re wearing now, that
+attire is part of your body that exists only within the boundary, but
+it’s possible to shed it like a skin. Of course, the shed maiden attire
+will disappear soon after. If you want to wear maiden attire again,
+simply wish for it strongly in your heart, and it will reappear. The
+maiden attire disappears when you go outside the boundary, so if you’re
+going out, take off your maiden attire within the boundary beforehand
+and put on clothes.<br />
+- As I mentioned before, we don’t need food or sleep, but it’s good for
+your mental health to continue eating and sleeping regularly, just like
+when you were human. This is true even if you’re not a maiden. The
+dining hall and bedrooms are next to the main hall, so check them
+out.<br />
+- Thanks to the Luminous Maiden, we maidens can communicate
+telepathically. Telepathy can be used wherever you are, even when you
+don’t know where you are, so in urgent situations, don’t hesitate to
+inform us of the situation via telepathy. Of course, sending telepathy
+to too many people simultaneously can easily give you a headache<span
+class="comment-marker">⁑</span>, so it helps a lot to know which maidens
+are likely to solve the problem well beforehand, right?</p>
+<p class="comment-paragraph">
+* The novel proper didn’t ever mention the Great Maiden’s appearance.
+Without this note of being truly beautiful, it would be difficult to
+immediately recognize who the Great Maiden is as the novel
+portraits.<br> ⁑ Originates from the fact that the end-to-end (E2E)
+encryption for group chatting typically takes O(n<sup>2</sup>)
+connections and thus is considered a difficult problem. Also that
+prevents an accident like sending a message to everyone else, as it’s
+common in instant messengers.
+</p>
+<p><span id="A:6">[A:6]</span> The following content is under the
+subtitle “Relationship with the Outside World.” It needs to cover the
+following:<br />
+- Although we are spiritual beings, we also exist as part of the real
+world, so we must respect the laws of the outside world. We must not
+fight against them as long as they do not undermine our existence. For
+example, this shrine’s land has been legally inherited by successive
+generations of sufficiently young and wise maidens according to outside
+standards. As of the writing of this book, Lua, whom I mentioned
+earlier, holds that role. Perhaps someday, the maidens reading this book
+may also take on that role.<br />
+- You’ve probably already received your new name, your maiden name. We
+use our maiden names within the shrine, but outside, you may unavoidably
+have to use your birth name. Please bear with it. If it’s difficult, you
+can tell other maidens in advance, and they will help you find a
+way.<br />
+- As maintainers of the world’s balance, we must continuously grasp how
+the world works. Especially, televisions, computers, and cell phones
+will often be needed. In such cases, come to me (Aki), and I’ll
+transform to help you. But don’t use them too much. Unfortunately, I
+only have one body.<br />
+- When going out into the outside world, you must be extremely careful
+not to reveal our secret. In fact, it might not be a big problem for us
+if we were exposed. The problem lies in the world being turned upside
+down. Religious beliefs could shatter, leading to wars, and those who
+wish to misuse our abilities might appear. Always remember that we are
+merely quiet balancers working behind the scenes and always be careful.
+In the unlikely event of an unavoidable situation, it’s best to
+telepathically contact the Great Maiden first and request her
+wisdom.</p>
+<p><span id="A:7">[A:7]</span> The following content is under the
+subtitle “Conclusion.” It needs to cover the following:<br />
+- What else have I missed? Oh, be careful not to let ordinary people who
+are not maidens enter the shrine’s boundary. If they enter, they will
+suffer extreme pain, unable to bear the weight of the soul. Usually, to
+protect them, we take measures to immobilize them and then send them
+outside the boundary, but since it’s painful, it’s best to prevent them
+from entering in the first place. A mailbox is installed at the
+boundary, so using letters is one method.<br />
+- The work entrusted to us is so weighty that it requires an eternity of
+investment. But that doesn’t mean we can’t enjoy it, does it? Don’t be
+too hasty, sometimes listen to new things happening in the world, and
+try to live your maiden life so you can enjoy it for a long time. And
+you never know. If new maidens join after you, you might get fresh
+inspiration from them?<br />
+- (End of concluding remarks)</p>
+<h2 id="extra">Side story: Hana’s Teapot</h2>
+<p><span id="B:1">[B:1]</span> As an external story, write the following
+as a novel. Lua observes the Great Maiden drinking tea in detail and
+notices that instead of filling the teapot directly from a container,
+she brings another container, pours tea into the teapot, and then pours
+from the teapot into a cup. Thinking this strange, she asks what’s
+special about that teapot. The Great Maiden confirms that there is
+indeed something special, but it will be a difficult story to tell,
+asking if Lua is okay with it. When Lua agrees, the Great Maiden says,
+“Then let’s talk while we drink tea together,” and hands her another
+cup. Novelize this up to just before the story begins.</p>
+<p><span id="B:2">[B:2]</span> The Great Maiden’s recollection begins,
+maintaining the third-person narration. Approximately 700 years ago from
+now, the number of maidens was much larger than it is today (on the
+order of hundreds). While today maidens gather in response to the divine
+call, back then, there were many more individuals with great
+inspiration, so there was no reason to refuse those who had inspiration
+and met basic conditions and wished to become maidens. The shrine also
+needed many more buildings to sustain such a large number of people.
+(The current shrine grounds maintain their size from that time, so there
+is much more empty space compared to the shrine buildings.)</p>
+<p><span id="B:3">[B:3]</span> Continue the recollection. And then came
+a period of confusion. So chaotic was it that a new nation was
+established in this land as a result (Lua immediately realizes this
+refers to the founding of Joseon and infers that the story points to the
+chaotic political situation of the late Goryeo period<span
+class="comment-marker">†</span>). Maidens who voluntarily came to the
+shrine served the Divine well during relatively peaceful times, but
+during chaotic periods, it was difficult for them to resist the
+temptation to misuse their powerful abilities. When Lua asks back if the
+maidens’ transformation ability doesn’t require detailed comprehension
+of objects, she receives the answer that it is necessary to avoid being
+exposed to others, but if one disregards that and intends to misuse the
+power, it’s not difficult to cause chaos without comprehension. Lua
+needs to be startled by this possibility. Anyway, one maiden succumbs to
+such temptation, and when one person seems to have no problem doing so,
+two more follow, then four, eight, and thus, in an instant, most of the
+maidens fall into temptation.</p>
+<p class="comment-paragraph">
+† In the English version, this became the Nanboku-chō period of Japan
+instead. By the way did you know that the end of the Nanboku-chō period
+and the fall of Goryeo do coincide (1392)? I didn’t!
+</p>
+<p><span id="B:4">[B:4]</span> Amidst rising distrust of the maidens,
+the last one who remained by Hana’s side was a young maiden named Yukina
+(around 150 years old at the time, this number should not be explicitly
+stated in the novel). Yukina was a maiden unparalleled in comprehension,
+capable of intuitively grasping the principles of objects simply by
+looking at them and replicating them precisely. Because she was such a
+Yukina, it was inevitable that she felt resentment towards other maidens
+who wielded power arbitrarily, disregarding comprehension. On the other
+hand, she was tormented by a different kind of temptation: whether she
+shouldn’t use her power for the right purposes. The important principle
+that maidens, due to their powerful abilities, should not act on the
+front lines, could have been broken, even if their intentions were good.
+There must be a small argument between Hana and Yukina at the end, and
+the Great Maiden’s maiden name, “Hana,” should be naturally revealed
+during their conversation (thereafter, maintain the title “the Great
+Maiden” in narration, but use her name in dialogue). Content about the
+teapot should not appear yet.</p>
+<p><span id="B:5">[B:5]</span> That night, Yukina leaves Hana. Hana
+could not help but understand Yukina’s thoughts and simply wished her
+well. Several months later, Yukina and the other maidens who had left
+the shrine all returned, severely battered. What happened was that
+Yukina had subsequently gathered common people and formed a militia to
+protect them, but failed. The other maidens, overconfident in their own
+power, were counterattacked by human wisdom and fled back to the shrine.
+The Great Maiden immediately sensed that they would soon be judged by
+the Divine and, acting as the voice of the Divine, reprimanded them. She
+reprimands Yukina separately. However, having never witnessed divine
+punishment before, they could not comprehend the true meaning of the
+punishment.</p>
+<p><span id="B:6">[B:6]</span> Soon, punishment descends upon them. For
+all maidens except Yukina, this punishment was to be transformed into
+tiny particles like grains of sand or earth and scattered across the
+world. Unable to fully perceive their own existence, their consciousness
+remained, but it was a terrible punishment to wander the world eternally
+in a fixed form. Yukina, who was to receive the punishment last,
+realizes its implication and shudders, closing her eyes tightly,
+expecting the same fate. However, although Yukina had walked a wrong
+path, her reasons were understandable, so she was spared the eternal
+punishment and instead judged to atone by becoming a teapot that holds
+and pours tea. Describe Yukina crying tears of gratitude for the Divine’
+mercy just before her forced transformation. In the voice of the Divine,
+Hana is told that Yukina must endure the punishment for “ninety moons
+waxing and waning ninety times,” and the Great Maiden explains this,
+stating that she herself doesn’t know exactly how long that refers
+to.</p>
+<p><span id="B:7">[B:7]</span> Upon hearing all this, Lua is horrified
+that the eternal punishment is even more dreadful than what she had
+heard, and she surmises that the current group of maidens gradually
+rebuilt after the complete disappearance of the former group. She also
+realizes that the reason Mai is much younger than the Great Maiden yet
+the next oldest (around 650 years old, similar to the founding of
+Joseon) is because she was the first maiden of that rebuilt maiden
+group. Also, express Aki, who, while trying to visit the Great Maiden,
+inadvertently overheard the story, realizing that such an event must
+have happened, considering the theory that humanity’s population
+drastically decreased before being rebuilt to its current size<span
+class="comment-marker">*</span> (the two still haven’t noticed Aki, and
+do not use the phrase “choke point”<span
+class="comment-marker">⁑</span>). Novelize up to the Great Maiden
+stroking the teapot and asking if they now understand why she keeps this
+teapot by her side.</p>
+<p class="comment-paragraph">
+* Intended as a reference to the <a
+href="https://en.wikipedia.org/wiki/Youngest_Toba_eruption#Toba_catastrophe_theory"
+class="text-blue-700 hover:underline">Toba catastrophe theory</a>, but
+Gemini somehow interpreted it as massive flood myths around the world.
+In any case, they are much older than the demise of the past maiden
+group.<br> ⁑ This term was used to refer to the model for the corporeal
+maiden population and was not suitable for the novel setting, hence the
+constraint. By the way, the simulation concluded (and eventually I
+agreed) that there were close to 40 corporeal maidens in 2038; did you
+get any closer to that?
+</p>
+<p><span id="B:8">[B:8]</span> Aki reveals herself, apologizing for
+unintentionally overhearing the entire conversation so far (to which the
+Great Maiden dissuades her, saying there’s no need). Aki then proposes
+the hypothesis that “ninety moons waxing and waning ninety times” might
+mean 90 x 90 = 8100 lunar months. After converting this time to solar
+years, Aki, who estimated the story to be around the 1380s and did the
+calculations, reveals that if her estimation is correct, the punishment
+should be almost over now. She then asks what the Great Maiden would
+first say to Yukina, once freed from her punishment. The paragraph
+should end with the Great Maiden gently chiding Aki, asking why she
+would ask such a thing with her right there, but then answering that she
+has missed her and looked forward to being with her again, and that she
+would surely embrace her.</p>
+<p><span id="B:9">[B:9]</span> The next day, after the Great Maiden
+slept as per the maidens’ habit, she woke early in the morning to find
+Yukina, finally freed from her punishment, sleeping beside her. She
+quietly thinks that Aki’s calculations were correct, smiles, embraces
+the still-sleeping Yukina, and then thinks that the “Maiden Life Guide”
+Aki wrote is now needed, and falls back asleep, concluding the
+story.</p>
+<h2 id="guide-letter">A missive about the <em>Maiden Life
+Guide</em></h2>
+<p><span id="C:1">[C:1]</span> Finally, write feedback from Yukina to
+Aki about the Maiden Life Guide. Yukina, though actually older than Mai,
+is still a novice in maiden life and therefore calls Aki “senior”, who
+has lived as a maiden longer than her. She complains, in a quite long
+letter, about why there’s no content for maidens like herself who’ve
+been freed from punishment, making an absurd request to consider a more
+diverse readership. As a side note, she luckily learned Hangul and
+modern Korean<span class="comment-marker">†</span> during her time as a
+teapot, so there’s no need to write a Hanmun version. However, since
+this is her first time writing modern Korean directly, avoid foreign
+words and adjust the Korean to have some slightly awkward parts (since
+“guide” itself is a foreign word, there should also be a statement that
+she didn’t know what this word meant at first but guessed it meant
+“manual” or “handbook”<span class="comment-marker">‡</span>). Also,
+avoid jokes or slang that a modern Korean speaker would use.</p>
+<p class="comment-paragraph">
+† In the English version, this became the Gothic script and (sorta)
+modern English.<br> ‡ In the English version, this point was replaced by
+the fact that the word <em>guide</em> wasn’t originally used for books
+until the 1830s. This again was a lucky coincidence for me.
+</p>
+
+      <nav class="pager-nav">
+        <a href="guide-letter.html" class="nav-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          Previous chapter
+        </a>
+        <a class="nav-button opacity-50 cursor-not-allowed">
+          Next chapter
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+
+
+    </section>
+
+    <footer class="text-center footer">
+      <script>
+        function switchTo(lang) {
+          sessionStorage.setItem('preferred-lang', lang);
+          const [, filename] = window.location.pathname.match(/\/([^\/]*)$/);
+          const path = (lang === 'ko' ? filename : lang + '/' + filename);
+          window.location.replace('../' + path);
+          return false;
+        }
+      </script>
+      <p><button onclick="return switchTo('ko')" class="text-blue-700 hover:underline">한국어</button> &middot; &copy; 2025 Kang Seonghoon. Some Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

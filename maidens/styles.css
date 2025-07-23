@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: serif;
   background-image: url(sakura.webp);
   background-position: top left;
   background-repeat: no-repeat;
@@ -16,6 +16,19 @@ body {
   position: relative; /* 배경 이미지 배치를 위해 필요 */
   --padding: 0.5rem;
   padding: calc(var(--padding) * var(--scale)); /* 기본 (모바일) 패딩 */
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+}
+body:lang(ko) {
+  font-family: 'Nanum Myeongjo', serif;
+}
+body:lang(en) {
+  font-family: 'Spectral', serif;
+  /* intentionally avoids 500+ weights */
+  --weight-500: 400;
+  --weight-600: 400;
+  --weight-700: 400;
 }
 @media (min-width: 640px) { /* sm breakpoint */
   body {
@@ -50,14 +63,14 @@ body {
 
 .main-title { /* 전체 페이지의 메인 제목 스타일 */
   font-size: calc(2.5rem * var(--scale));
-  font-weight: 700;
+  font-weight: var(--weight-700);
   color: #2f4f4f;
   text-align: center;
   margin-bottom: calc(1.5rem * var(--scale));
 }
 .section-title { /* 섹션 내부 제목 스타일 (사용된 프롬프트들) */
   font-size: calc(2rem * var(--scale));
-  font-weight: 700;
+  font-weight: var(--weight-700);
   color: #2f4f4f;
   border-bottom: 2px solid #a0a0a0;
   padding-bottom: calc(0.75rem * var(--scale));
@@ -66,7 +79,7 @@ body {
 }
 section h2 {
   font-size: calc(1.8rem * var(--scale)) !important; /* 챕터 부제목 크기 */
-  font-weight: 700;
+  font-weight: var(--weight-700);
   color: #2f4f4f;
   margin-top: calc(3rem * var(--scale)); /* 상단 여백 */
   margin-bottom: calc(1.5rem * var(--scale));
@@ -85,7 +98,7 @@ section p.text-gray-700 {
 .comment-paragraph {
   font-size: calc(0.95rem * var(--scale)); /* 주석 글꼴 크기 조정 (기존 0.875rem에서 0.95rem) */
   color: #707070; /* 주석 텍스트 색상 (본문보다 약간 진하게) */
-  font-weight: bold; /* 돋보이게 */
+  font-weight: var(--weight-700); /* 돋보이게 */
   margin-top: calc(0.75rem * var(--scale)); /* 주석 상단 여백 */
   margin-bottom: calc(2.5rem * var(--scale)); /* 다음 프롬프트와의 간격 */
   padding-top: calc(0.5rem * var(--scale)); /* 주석과 프롬프트 텍스트 간 간격 */
@@ -107,7 +120,7 @@ section p.text-gray-700 {
   text-decoration: none; /* 밑줄 제거 */
   transition: color 0.3s ease, transform 0.2s ease; /* 색상 및 변형 전환 효과 */
   font-size: calc(0.95rem * var(--scale));
-  font-weight: 600;
+  font-weight: var(--weight-600);
   display: inline-flex;
   align-items: center;
   gap: calc(0.4rem * var(--scale));
@@ -163,9 +176,15 @@ hr::before {
   color: #707070; /* 부드러운 회색 */
   margin-bottom: calc(0.25rem * var(--scale));
 }
+.languages {
+  color: #707070; /* 부드러운 회색 */
+  margin-top: calc(0.5rem * var(--scale));
+  margin-bottom: calc(0.25rem * var(--scale));
+  text-align: center;
+}
 .section-title {
   font-size: calc(2rem * var(--scale)); /* 섹션 제목 크기 */
-  font-weight: 700;
+  font-weight: var(--weight-700);
   color: #2f4f4f; /* 짙은 청록색 계열 */
   border-bottom: 2px solid #a0a0a0; /* 섹션 제목 아래 부드러운 회색 밑줄 */
   padding-bottom: calc(0.75rem * var(--scale));
@@ -188,7 +207,7 @@ hr::before {
 }
 .chapter-title {
   font-size: calc(1.25rem * var(--scale));
-  font-weight: 600;
+  font-weight: var(--weight-600);
   color: #66b2b2; /* 부드러운 청록색 링크 색상 */
   text-decoration: none;
   transition: color 0.2s ease;
@@ -199,7 +218,7 @@ hr::before {
 .chapter-page {
   font-size: calc(1.1rem * var(--scale));
   color: #707070; /* 부드러운 회색 */
-  font-weight: 500;
+  font-weight: var(--weight-500);
 }
 .download-button {
   background-color: #77aaff; /* 부드러운 파란색 버튼 */
@@ -209,7 +228,7 @@ hr::before {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-size: calc(1.1rem * var(--scale));
-  font-weight: 600;
+  font-weight: var(--weight-600);
   display: inline-flex; /* 아이콘과 텍스트 정렬 */
   align-items: center;
   gap: calc(0.5rem * var(--scale)); /* 아이콘과 텍스트 간격 */

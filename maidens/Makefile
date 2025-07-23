@@ -1,6 +1,8 @@
-.PHONY: all
-all: 1.html 2.html 3.html 4.html 5.html 6.html 7.html 8.html 9.html guide.html extra.html guide-letter.html prompts.html
+PAGES=1 2 3 4 5 6 7 8 9 guide extra guide-letter prompts
 
-%.md: %.html
-	pandoc -f markdown+smart -s $@ -o $< --template=template.html.inc
+.PHONY: all
+all: $(PAGES:%=%.html) $(PAGES:%=en/%.html)
+
+%.html: %.md template.html.inc
+	pandoc.exe -f markdown+smart -s $< -o $@ --template=template.html.inc
 

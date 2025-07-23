@@ -1,129 +1,124 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
-  <title>산속 무녀들의 비밀</title>
+  <title>Eternal Shrine Maidens</title>
   <script>(function() {
     if (window.location.protocol === 'file:') return;
     const preferred = sessionStorage.getItem('preferred-lang');
     const langs = preferred ? [preferred] : navigator.languages || [navigator.language || navigator.userLanguage];
     const koIndex = langs.findIndex(l => l.startsWith('ko'));
     const enIndex = langs.findIndex(l => l.startsWith('en'));
-    if (enIndex !== -1 && (koIndex === -1 || enIndex < koIndex)) {
-      if (/^(\d+|guide|guide-letter|extra|prompts|index)\.html$$/.test(filename)) {
-        window.location.replace('en/');
-      }
+    if (koIndex !== -1 && (enIndex === -1 || koIndex < enIndex)) {
+      window.location.replace('../');
     }
   })()</script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="../styles.css" rel="stylesheet">
 </head>
 <body class="antialiased p-2 sm:p-4 md:p-8">
   <div class="container mx-auto shadow-xl rounded-xl">
     <header class="text-center mb-10">
-      <h1 class="header-title">산속 무녀들의 비밀</h1>
-      <p class="subheader-text">강 성훈이 Gemini 2.5 Flash와 함께 지음</p>
-      <p class="subheader-text">2025-07-12 revision 6.1</p>
+      <h1 class="header-title">Eternal Shrine Maidens</h1>
+      <p class="subheader-text">Written and translated by Kang Seonghoon with Gemini 2.5 Flash</p>
+      <p class="subheader-text">2025-07-23 translation revision 2.2</p>
     </header>
     <p class="languages">
-      <button class="font-bold" onclick="sessionStorage.setItem('preferred-lang','ko');return false">한국어</button> &middot;
-      <a href="en/" class="text-blue-700 hover:underline" onclick="sessionStorage.setItem('preferred-lang','en')">English</a>
+      <a href="../" class="text-blue-700 hover:underline" onclick="sessionStorage.setItem('preferred-lang','ko')">한국어</a> &middot;
+      <button class="font-bold" onclick="sessionStorage.setItem('preferred-lang','en');return false">English</button>
     </p>
 
     <section class="mb-12">
-      <h2 class="section-title">목차</h2>
+      <h2 class="section-title">Table of Contents</h2>
       <ul class="chapter-list">
         <li class="chapter-item">
-          <a href="1.html" class="chapter-title">1: 현신의 무녀</a>
+          <a href="1.html" class="chapter-title">I. Corporeal Maiden</a>
           <span class="chapter-page">2</span>
         </li>
         <li class="chapter-item">
-          <a href="2.html" class="chapter-title">2: 자동차 무녀</a>
+          <a href="2.html" class="chapter-title">II. Automotive Maiden</a>
           <span class="chapter-page">12</span>
         </li>
         <li class="chapter-item">
-          <a href="3.html" class="chapter-title">3: 새로운 무녀</a>
-          <span class="chapter-page">27</span>
+          <a href="3.html" class="chapter-title">III. New Maidenhood</a>
+          <span class="chapter-page">28</span>
         </li>
         <li class="chapter-item">
-          <a href="4.html" class="chapter-title">4: 시간의 무녀</a>
-          <span class="chapter-page">40</span>
+          <a href="4.html" class="chapter-title">IV. Temporal Maiden</a>
+          <span class="chapter-page">41</span>
         </li>
         <li class="chapter-item">
-          <a href="5.html" class="chapter-title">5: 연인의 재회</a>
-          <span class="chapter-page">51</span>
+          <a href="5.html" class="chapter-title">V. Lovers' Reunion</a>
+          <span class="chapter-page">53</span>
         </li>
         <li class="chapter-item">
-          <a href="6.html" class="chapter-title">6: 개발의 칼날</a>
-          <span class="chapter-page">68</span>
+          <a href="6.html" class="chapter-title">VI. Edge of Development</a>
+          <span class="chapter-page">70</span>
         </li>
         <li class="chapter-item">
-          <a href="7.html" class="chapter-title">7: 빛의 무녀</a>
-          <span class="chapter-page">80</span>
+          <a href="7.html" class="chapter-title">VII. Lumionus Maiden</a>
+          <span class="chapter-page">82</span>
         </li>
         <li class="chapter-item">
-          <a href="8.html" class="chapter-title">8: 영겁의 독</a>
-          <span class="chapter-page">92</span>
+          <a href="8.html" class="chapter-title">VIII. Eternal Poison</a>
+          <span class="chapter-page">94</span>
         </li>
         <li class="chapter-item">
-          <a href="9.html" class="chapter-title">9: 세상의 위기</a>
-          <span class="chapter-page">100</span>
+          <a href="9.html" class="chapter-title">IX. World in Crisis</a>
+          <span class="chapter-page">102</span>
         </li>
         <li class="chapter-item">
-          <a href="guide.html" class="chapter-title">무녀 생활 가이드</a>
-          <span class="chapter-page">121</span>
+          <a href="guide.html" class="chapter-title">Maiden Life Guide</a>
+          <span class="chapter-page">124</span>
         </li>
         <li class="chapter-item">
-          <a href="extra.html" class="chapter-title">외전: 한아의 주전자</a>
-          <span class="chapter-page">128</span>
+          <a href="extra.html" class="chapter-title">Side story: Hana's Teapot</a>
+          <span class="chapter-page">131</span>
         </li>
         <li class="chapter-item">
-          <a href="guide-letter.html" class="chapter-title">〈무녀 생활 가이드〉에 대한 서한</a>
-          <span class="chapter-page">140</span>
+          <a href="guide-letter.html" class="chapter-title">A missive about the <em>Maiden Life Guide</em></a>
+          <span class="chapter-page">143</span>
         </li>
         <li class="chapter-item">
-          <a href="prompts.html" class="chapter-title">사용된 프롬프트들</a>
-          <span class="chapter-page">142</span>
+          <a href="prompts.html" class="chapter-title">Used Prompts</a>
+          <span class="chapter-page">145</span>
         </li>
       </ul>
     </section>
 
     <section class="text-center mb-12">
-      <h2 class="section-title">소설 전문 다운로드</h2>
+      <h2 class="section-title">Full text download</h2>
       <p class="mb-6 text-gray-700">
-        "산속 무녀들의 비밀" 소설 전문을 PDF 파일로 다운로드하여 오프라인에서도 편하게 읽어보세요.
+        Download the full text of <em>Eternal Shrine Maidens</em> as a PDF file for your offline reading convenience.
       </p>
-      <a href="eternal-shrine-maidens-r6.1.pdf" download="산속 무녀들의 비밀.pdf" class="download-button inline-block">
+      <a href="eternal-shrine-maidens-en-tr2.2.pdf" download="Eternal Shrine Maidens.pdf" class="download-button inline-block">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
-        PDF 다운로드
+        Download PDF
       </a>
     </section>
 
     <footer class="text-center footer">
-      <p>&copy; 2025 강 성훈. 일부 권리 보유.</p>
-      <p><a href="https://commons.wikimedia.org/wiki/File:%E5%90%AB%E7%B4%85%E6%A1%9C.jpg" class="text-blue-700 hover:underline">배경 이미지</a> &copy; 2018 Yamasuso (CC-by-sa)</p>
+      <p>&copy; 2025 Kang Seonghoon. Some Rights Reserved.</p>
+      <p><a href="https://commons.wikimedia.org/wiki/File:%E5%90%AB%E7%B4%85%E6%A1%9C.jpg" class="text-blue-700 hover:underline">Background photo</a> &copy; 2018 Yamasuso (CC-by-sa)</p>
     </footer>
   </div>
 
   <section class="copyright-section text-center text-gray-600 mt-8 pb-8 px-4 sm:px-6 md:px-8">
     <div class="max-w-xl mx-auto p-6">
-      <p class="mb-4">이 저작물은 2025년 7월 5일부터 8일까지, 그리고 추가로 11일에 Gemini 2.5 Flash 대형 언어 모델의 출력을 바탕으로 큐레이션, 교정 및 기타 결정을 통해 작성되었습니다. 또한 이 과정에서 Gemini 2.5 Pro 대형 언어 모델이 자기 평가를 위해서만 간헐적으로 사용되었습니다.</p>
+      <p class="mb-4">This work was created during July 5–8, 11 and 15–16, 2025 and curated, corrected and undergone other decisions with outcomes of Gemini 2.5 Flash LLM as a basis. Gemini 2.5 Pro LLM was also intermittently used for self-reviews and translations during this process.</p>
 
-      <p class="mb-4">
-        <a href="https://ai.google.dev/gemini-api/terms#use-generated" class="text-blue-700 hover:underline">구글 Gemini API의 이용 약관</a>에 의거하여 구글은 생성된 저작물의 저작권자가 될 수 없으며,
-        <a href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf" class="text-blue-700 hover:underline">미국 저작권청의 2025년 저작권성 리포트</a>에 근거하여 AI로 생성한 텍스트는 저작권법으로 보호받지 않으나 창작을 보조하는 목적과 같이 인간의 개입이 분명한 텍스트는 저작권법의 대상이 된다고 간주합니다.
-      </p>
+      <p class="mb-4">As per the <a href="https://ai.google.dev/gemini-api/terms#use-generated" class="text-blue-700 hover:underline">Google's Gemini API Additional Term of Services</a> Google disclaims to be the copyright holder of any generated works, and as per the <a href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf" class="text-blue-700 hover:underline">USCO's 2025 report on Copyrightability</a> texts generated by AI can't be copyrighted by themselves but texts with evident human interventions like creative assistance can be copyrighted.</p>
 
-      <p class="mb-8">그럼에도 불구하고 기계학습 모델의 학습에 사용된 기존 저작물들로 인한 저작권 논란을 존중하여, 이 저작물의 저작권은 최소한으로만 행사됩니다.</p>
+      <p class="mb-8">However, the author of this work respects the position that prior works were used to train machine learning models without any consent or compensation to human authors and chose to exercise the copyright to the minimal extent.</p>
 
       <div class="mt-8">
         <a href="https://creativecommons.org/licenses/by/4.0/legalcode.ko"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAAAvCAYAAADNXQm0AAAFgUlEQVR4Xu2cz0tdRxTHI6igNt2kpGBwYXcu2toqBHFjpKX1B25cpGKkreAiBQtZpCZpSdpF6VPbIChI00JsaLSxv2xFEEFw6UJwJYh/gAt3/kJQ8ZZ5nXt77vfMnTv3+d698+r9wgfyZs7M+Z45Y95Tn+/SpX/lpKRIsnLuP3rgzP79a8oF597D+97FYJMpF5f0UqQwCnIppv+YcW723nSuN113mpqbnIHbAyzm/0RFRQU+JzNwjc3k5VJkHg+zQwhj5s9f2D7FBtZkAu5hI9JrbmZ7P+xlRUflh2c/sn1tR/zvh3XMzc05Ko2NjbHY259+wva0Cekz+qXAQpHu7m5ncnLSyWQyTktLC5tHcH9bqaj0P1VEUbHULP1FM4jFRTmg4+Njts72Q3IRT3km9ba2tuKQJ7q+p6+H5bAB6c+sIS/+mmWN1B1OmHAfUx9JYVJz1BjMYQPSm5k5bODOzg7WG1nz8/NsX8xrA9SfTrnEYa6kkb7CjWHj8qmzszO2P+ZPGtO66+vrs3GVlZU4xWR5rXpj2LBCaG9vz5fjyitXmI+kKC8vL0jttF7MmSShl+LpzJTP/PLyMtaWN9E8Ok9x4/oZGhpCy57QOyVI+/v71tUqkJ6CTZkWmC/RXLWv1TI/SWBSO56T6Zm5MZgzSaSnYFOmxeVTNCf6SQKT+qlnRCeb6nSRntSmohTX1tbmdHV1ORsbGzjlU0dHh9Pe3u6sra3hlCeaEz3FzfdTT4zqx7MyPTdb6qRIT2pTJoXhAbhMTEwYxQ0ODvrihPr7+735qqoq5ituws5ACOui6OTGYM4kkZ7UpsIKw+KRqHFUdB59xY3OpyusKaw+V7bUSJGe1KZ0ha2srATO0zHx/bpJHIquQV9xo/OJor4XFxdxmsmWGinSEzeF34qidHNUpnEoug69xU2UGmhs2KUQr8NsqZEiPXFT4j2busPQzVGZxqHoOvSWBKY1UN9hl8KNu/VRH8uXJNIXP/hHX3+pbahujso0DkXXobckMK2DxukuRWNjo1X1UaQvbuz579Pag9DNid9luNLFnZ6e4pAnug69JcHnX33h+aH1oajvoEuxu7vrxYi38mGupJHe1Aeva+jm5mbgvDu2tbXl1NTUhMatrq76xulckLckoJ7Gx8fRclY0RnUpDg4OrKyNIr2pzVHzKtF5FVHjqOg8+koS6qu0tBRta9Xc3GxtXRTpT22QFiDe96ASjaGgysrKWIwqTojGvtfxPvOVNFjDyMgIluDT0tISW4N72oT0qDZZ9VJVaAMLoWI4vG8eZ1ijTbjxTivbyzak1+DDpwXFoYWFBV9O9GMbr7/5Bmu8ChtfUAYhPQcfPhZXaNFcre/a/1XlIn7Yd63mms+/TW8UikLopSBBWTo7O7GPeRNeQPSREg9Gl6Lv4z5fs7a3t7Gf5xZeiKfTU8xHSjwYXQoS6FFbW4t9zVm4d0lJCcufEh/epVAREOzjvML9MO9PL56x+ZRYYANZ7nx2p6AXA/cRmORLiQU24IFN0jVqfX0d+85EfxFEUT1lXH75MotLiQ024AObJfjgVg+LyxXVX57n+sOhOGloaPBBP6dCPK6rq1PG4z6WwgYY2DQXjIvC1Vevsv0E4jsPjLWRIIm5k5MT79+C0dFR3+MigA0oweZR7j64y+KDwLUU8dkNGG8r9BLQMdW80OHhIdvDYthAINhEHd+Of+eMP5lg40GI3zpiPpuhTRccHR35HrtvCXD/nAHXWw4b0KJ6UXheMEcxECRVjPikG1xvOWzAGGxuVHC/YiLoEgwP//cZYKqYIoENROatxrdZw1X8/NtztrZYwYYPDAxkH1dXVwfGFBFsIMUAlWZn/Z/24wrXFgFsICWFDaSksIGUC84/bUT2e48GT3IAAAAASUVORK5CYII=" alt="CC-BY Logo" class="mx-auto mb-2"></a>
-        <p class="mb-4">이 저작물은 크리에이티브 커먼즈 저작자표시 (CC-by) 4.0 국제 라이선스에 따라 이용할 수 있습니다.</p>
+        <p class="mb-4">This work can be used in terms of Creative Commons Attribution (CC-by) 4.0 International license.</p>
       </div>
     </div>
   </section>

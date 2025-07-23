@@ -1,172 +1,119 @@
 <!DOCTYPE html>
-<html lang="$if(lang)$$lang$$else$ko$endif$">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-$for(author-meta)$
-  <meta name="author" content="$author-meta$" />
-$endfor$
-$if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$" />
-$endif$
-$if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
-$endif$
-$if(description-meta)$
-  <meta name="description" content="$description-meta$" />
-$endif$
-  <title>$if(lang)$Eternal Shrine Maidens$else$산속 무녀들의 비밀$endif$ - $pagetitle$</title>
+  <title>Eternal Shrine Maidens - A missive about the Maiden Life Guide</title>
   <script>(function() {
     if (window.location.protocol === 'file:') return;
     const preferred = sessionStorage.getItem('preferred-lang');
     const langs = preferred ? [preferred] : navigator.languages || [navigator.language || navigator.userLanguage];
     const koIndex = langs.findIndex(l => l.startsWith('ko'));
     const enIndex = langs.findIndex(l => l.startsWith('en'));
-$if(lang)$
     if (koIndex !== -1 && (enIndex === -1 || koIndex < enIndex)) {
       const path = window.location.pathname;
       const filename = path.substring(path.lastIndexOf('/') + 1);
       window.location.replace('../' + filename);
     }
-$else$
-    if (enIndex !== -1 && (koIndex === -1 || enIndex < koIndex)) {
-      const path = window.location.pathname;
-      const filename = path.substring(path.lastIndexOf('/') + 1);
-      if (/^(\d+|guide|guide-letter|extra|prompts|index)\.html$$/.test(filename)) {
-        window.location.replace('en/' + filename);
-      }
-    }
-$endif$
   })()</script>
   <script src="https://cdn.tailwindcss.com"></script>
-$if(lang)$
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css" />
-$else$
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-$endif$
-$for(css)$
-  <link rel="stylesheet" href="$css$" />
-$endfor$
-$for(header-includes)$
-  $header-includes$
-$endfor$
-$if(math)$
-  $math$
-$endif$
 </head>
 <body>
   <div class="container mx-auto shadow-xl rounded-xl">
     <header class="p-6 sm:p-8 md:p-10 pb-4 border-b border-gray-200 flex justify-between items-center">
       <h1 class="text-xl font-bold text-gray-800" style="color: #2f4f4f;">
-$if(lang)$
         Eternal Shrine Maidens
-$else$
-        산속 무녀들의 비밀
-$endif$
       </h1>
       <a href="index.html" class="nav-button">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
         </svg>
-$if(lang)$
         Back
-$else$
-        뒤로 가기
-$endif$
       </a>
     </header>
 
     <section class="p-6 sm:p-8 md:p-10 pt-6">
-$for(include-before)$
-$include-before$
-$endfor$
-$if(title)$
-<h1 class="section-title">$title$</h1>
-$if(abstract)$
-<p class="text-gray-700 mb-8">
-$abstract$
-</p>
-$endif$
-$endif$
-$if(toc)$
-<nav id="$idprefix$TOC" role="doc-toc">
-$if(toc-title)$
-<h2 id="$idprefix$toc-title">$toc-title$</h2>
-$endif$
-$table-of-contents$
-</nav>
-$endif$
+<h1 class="section-title">A missive about the <em>Maiden Life
+Guide</em></h1>
 
       <nav class="pager-nav">
-$if(prev)$
-        <a href="$prev$" class="nav-button">
-$else$
-        <a class="nav-button opacity-50 cursor-not-allowed">
-$endif$
+        <a href="extra.html" class="nav-button">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
-$if(lang)$
           Previous chapter
-$else$
-          이전 장
-$endif$
         </a>
-$if(next)$
-        <a href="$next$" class="nav-button">
-$else$
-        <a class="nav-button opacity-50 cursor-not-allowed">
-$endif$
-$if(lang)$
+        <a href="prompts.html" class="nav-button">
           Next chapter
-$else$
-          다음 장
-$endif$
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </a>
       </nav>
 
-$body$
+<p>To my esteemed Senior, Aki,</p>
+<p>I have perused the <em>Maiden Life Guide</em> which thou didst strive
+to create. Upon first encountering this ‘Guide,’ I confess I
+comprehended not its meaning, yet by the context, I soon divined it to
+signify a book of precepts or a way-finding scroll. Throughout my
+perusal of the tome, I could feel thy deep wisdom and profound affection
+for the maidens imbued in every line. The exposition upon fidelity and
+comprehension especially filled me with no small wonder, for its
+teachings are far more ordered than the lore of my own corporeal days. I
+doubt not it shall be of great aid to young maidens such as Lua and
+Izumi.</p>
+<p>Howbeit, Senior, one great regret lingers within me regarding this
+guide. Thou didst declare it for ‘those newly become maidens,’ yet
+wherefore is there no section for one such as myself, who, freed from
+long penance, is a maiden once more?</p>
+<p>Verily, I am one of the eldest maidens, yet during the past six
+hundred and fifty years when my flesh was a teapot, the ways of the
+world and the life of a maiden have transformed beyond measure. My
+transformation ability remains, yet the sensation of my body floating,
+untethered to the ground, or the feeling of my inner essence diffusing
+as tea leaves steep in water—I find it nigh impossible to accustom
+myself to such things. The world I knew was of centuries past; this
+world is vastly different. I do mightily wonder why counsel on how to
+live again as a maiden in a world so strange is absent.</p>
+<p>As I understand it, my penance alone was finite. Perchance none shall
+again face a plight as peculiar as mine. Nevertheless, methinks a guide
+should rightfully encompass a broader range of readers. I urge you not
+to set forth all things in this volume at once. I did but wish to impart
+that consideration for the few, for the unique cases, is also needed.
+Should there be other maidens who have undergone such singular
+experiences, this guide would become more complete still were it to
+include even a small word of counsel for them.</p>
+<p>Fortuitously, during my time as a teapot, through tales recounted by
+the Great Maiden and scripts newly encountered, I have come to grasp the
+new letters and speech of this land. By this good hap, I am now able to
+send this letter to thee, not in the Gothic script I might have penned
+aforetime, but in these new characters, which I deem fortunate.</p>
+<p>Should my missive perchance have wrought e’en a slight wound upon thy
+labors, prithee, judge it with a generous heart. Know, I pray thee, that
+these words were tendered solely from a heart that wishes this guide to
+shine forth as a brighter star unto all maidens.</p>
+<p>May thy days be ever tranquil.</p>
+<p>From
+Yukina.<a href="prompts.html#C:1" class="comment-marker">[C:1]</a></p>
 
       <nav class="pager-nav">
-$if(prev)$
-        <a href="$prev$" class="nav-button">
-$else$
-        <a class="nav-button opacity-50 cursor-not-allowed">
-$endif$
+        <a href="extra.html" class="nav-button">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
-$if(lang)$
           Previous chapter
-$else$
-          이전 장
-$endif$
         </a>
-$if(next)$
-        <a href="$next$" class="nav-button">
-$else$
-        <a class="nav-button opacity-50 cursor-not-allowed">
-$endif$
-$if(lang)$
+        <a href="prompts.html" class="nav-button">
           Next chapter
-$else$
-          다음 장
-$endif$
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </a>
       </nav>
 
-$for(include-after)$
-$include-after$
-$endfor$
 
     </section>
 
@@ -174,21 +121,13 @@ $endfor$
       <script>
         function switchTo(lang) {
           sessionStorage.setItem('preferred-lang', lang);
-          const [, filename] = window.location.pathname.match(/\/([^\/]*)$$/);
+          const [, filename] = window.location.pathname.match(/\/([^\/]*)$/);
           const path = (lang === 'ko' ? filename : lang + '/' + filename);
-$if(lang)$
           window.location.replace('../' + path);
-$else$
-          window.location.replace('./' + path);
-$endif$
           return false;
         }
       </script>
-$if(lang)$
       <p><button onclick="return switchTo('ko')" class="text-blue-700 hover:underline">한국어</button> &middot; &copy; 2025 Kang Seonghoon. Some Rights Reserved.</p>
-$else$
-      <p><button onclick="return switchTo('en')" class="text-blue-700 hover:underline">English</button> &middot; &copy; 2025 강 성훈. 일부 권리 보유.</p>
-$endif$
     </footer>
   </div>
 </body>
